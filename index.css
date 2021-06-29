@@ -263,7 +263,9 @@ button:hover{
 
 
 
-
+.portfolio {
+	background-image:"4.jpg";
+}
 .portfolio h2 {
 	font-size:3rem;
 	padding-left:100px;
@@ -396,6 +398,10 @@ button:hover{
 
 
 
+ul li a img{
+	height:40px;
+	width: 40px;
+}
 
 
 
@@ -403,10 +409,47 @@ button:hover{
 
 
 
- @media only screen and (min-width: 768px) {
 
+
+
+ @media only screen and (max-width: 1118px) {
+ 	.admin img{
+ 		left:8%;
+ 	  }
+ 	}
+ 	
+ @media (max-width:944px){
+ 	body .background{ 
+ 		left: 6%;
+ 		top:20px;
+ 		width: 130px;
+ 	}
  }
+ nav ul li a{
+ 	font-size: 17px;
+ }
+}
+@media (max-width: 860px){
+	label .menu1{
+		display: block;
+	}
+}
+nav {
+	position: fixed;
+	width: 100%;
+	background:green;
+	top:80px;
+	left:0;
+	text-align: center;
+	transition: all .4s;
+}
 
+nav ul li a{
+	font-size: 20px;
+}
+.check:checked ~ ul{
+	left: 0;
+}
 
 
 
