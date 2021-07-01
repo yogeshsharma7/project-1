@@ -41,14 +41,14 @@ nav{
 	height: 100px;
 	margin-top:5px;
 	cursor: pointer;
-	position: fixed;
+	
 }
 
 
 nav ul{
      left: -100%;
 	 display: flex;
-	 position: fixed;
+	 position:fixed;
 	 flex-direction: row;
 	 flex-flow: wrap;	 
 	 list-style: none;
@@ -59,18 +59,11 @@ nav ul{
 
 
 nav ul li {
-	display: flex;
-	flex-direction: row;
-	flex-flow: wrap;
 	padding: 25px;
-	justify-content: space-between;
 	font-size: 25px;
 }
 
-nav ul li{
-	display: inline-block;
-	margin:0 20px;
-}
+
 
 nav ul li a:hover{
 	color:white;
@@ -95,7 +88,7 @@ nav ul li a{
 .admin img{
 	border-radius:50%;
 	box-shadow:0 0 0 1rem rgba(257,257,257, .3);
-    margin: 2rem 4rem 6rem 8rem;
+    margin: 0rem 0rem 4rem 4rem;
     margin-left:60px;
 }
 
@@ -110,6 +103,7 @@ nav ul li a{
 .admin-1 h1{
 	font-size: 50px;
 	margin:10px 0px;
+		color:#000080;
 }
 
 .admin-1 p{
@@ -121,15 +115,11 @@ nav ul li a{
     color:brown;
 }
 
-.admin-1 h1{
-	color:#000080;
-}
 
 .share {
 	width:100%;
 	height:50px;
 	display: flex;
-	padding-bottom: : 100px;
 	float: right;
 
 }
@@ -194,19 +184,19 @@ button:hover{
 }
 
 .contact-info{
-	background-color:grey;
-	color:white;
+	color:orangered;
 	max-width: 100%;
 	line-height: 30px;
 	padding-left: 70px;
 	font-size: 20px;
-	margin-top: 140px;
+	margin-top: 260px;
 }
 
+
 .contact-section h2{
-	font-size:30px;
+	font-size:40px;
 	 padding-left:100px;
-	margin-top: 90px;
+	margin-top: 10px;
 }
 
 .contact-section form{
@@ -271,7 +261,7 @@ button:hover{
 	font-size:3rem;
 	padding-left:100px;
 	color: blue;
-	margin-top: 90px;
+	margin-top: 10px;
 }
 
 .portfolio h2 span{
@@ -320,7 +310,7 @@ button:hover{
 	height: 100%;
 	background-color: whitesmoke;
 	margin-left: 20%;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 	
@@ -332,7 +322,7 @@ button:hover{
 
 .box-a img{
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 15px;
 	width: 30%;
 	height: 30%;
 	
@@ -399,6 +389,15 @@ button:hover{
 	margin-left: 10px;
 }
 
+.sitereport h1{
+	font-size:2rem;
+	margin-top:4px;
+}
+.sitereport p{
+	
+}
+
+
 
 
 ul li a img{
@@ -415,9 +414,94 @@ ul li a img{
 
 
 
- @media only screen and (max-width: 1118px) {
- 	.admin img{
+ @media only screen and (max-width: 1100px) and (min-width: 750px){
+ 	nav{
+ 		width: 100%;
+ 	}
+ 	nav ul{
+ 		flex-direction: row;
+ 		flex-wrap: nowrap;
+ 		width: 100%;
+ 		margin-left: -350px;
+
+ 	}
+
  	
+ 	.admin-1{
+ 		margin-left: 400px;
+ 		margin-top: -300px;
+ 	}
+ 	.admin-1 h1{
+ 		font-size: 24px;
+ 		text-align: center;
+ 	}
+ 	.admin-1 p{
+ 		font-size: 20px;
+ 		text-align: center;
+ 	}
+ 	.c-btn{
+ 		margin-left:  67%;
+ 	}
+ 	.share{
+ 		width: 100%;
+ 	}
+ 	.share ul{
+ 		margin-left: 70%;
+ 	}
+ }
+ 	
+ 	
+ @media only screen and (max-width:750px) and (min-width:360px){
+ 	nav{
+ 		width: 100%;
+ 		}
+ 	nav ul{
+ 			flex-direction: column;
+ 			width: 100%;
+ 			margin-left: -375px;
+ 		}
+    .admin img{
+    	margin-left:41px;
+    	margin-top:-120px;
+    }
+ 	.admin-1{
+ 		margin-left:8px;
+ 		margin-top: -5px;
+ 	}
+ 	.admin-1 h1{
+ 		font-size: 18px;
+ 		text-align: center;
+ 		color:white;
+ 	}
+ 	.admin-1 p{
+ 		font-size: 14px;
+ 		text-align: center;
+ 		color:yellow;
+ 	}
+ 	.c-btn{
+ 		margin-left: 40%;
+ 	}
+ 	.share{
+ 		flex-direction:row;
+ 	
+ 	}
+ 	.share ul{
+ 		margin-left: 20%;
+ 		margin-top:7px;
+ 	}
+ 	.share ul li img{
+
+ 		
+
+ 	}
+ 	.contact-info{
+ 		font-size: 12px;
+ 		margin-left:13%;
+ 		margin-top: 80px;
+ 		align-items: center;
+ 	}
+ 	
+ }
 
 
 
