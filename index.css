@@ -3,13 +3,25 @@ body{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-repeat: center center fixed;
 	font-size: 15px;
-	box-sizing:all;
+	box-sizing:border-box;
 }
+
+.screen1{
+	background: url(111.jpg);
+}
+.screen2{
+	background: url(4.jpg);
+}
+.screen3{
+	background: url(123.jpg);
+}
+.screen4{
+	background-color:burlywood;
+}
+
 .menu1{
 	display: block;
-	background-color: none;
 	margin-top: 10px;
 	width: 80px;
 	margin-left: 20px;
@@ -53,14 +65,14 @@ nav ul{
 	 flex-flow: wrap;	 
 	 list-style: none;
 	 padding-left: 500px;
-	 justify-content: space-between;
 	 transition: all 2s ease;
+	 margin-left: 20%;
 }
 
 
 nav ul li {
-	padding: 25px;
 	font-size: 25px;
+	padding-left: 20px;
 }
 
 
@@ -74,7 +86,6 @@ nav ul li a{
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: row;
-	justify-content: space-between;
 	color:red;
 	text-decoration: none;
 
@@ -86,6 +97,8 @@ nav ul li a{
 
 }
 .admin img{
+	width: 280px;
+	height: 310px;
 	border-radius:50%;
 	box-shadow:0 0 0 1rem rgba(257,257,257, .3);
     margin: 0rem 0rem 4rem 4rem;
@@ -166,21 +179,16 @@ button:hover{
 	box-sizing: border-box;
 }
  
-.contact {
-    padding-left:100px;
-	min-height: 100%;
-    background-color: transparent;
-	justify-content: space-between;
+.contact-me {
+    width: 100%;
 	display: flex;
 	align-items: center;
-	flex-direction: column;
+	flex-direction:column;
 }
 
-.contact-section{
-	width: 100%;
+.get-me{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .contact-info{
@@ -193,13 +201,13 @@ button:hover{
 }
 
 
-.contact-section h2{
+.get-me h2{
 	font-size:40px;
 	 padding-left:100px;
 	margin-top: 10px;
 }
 
-.contact-section form{
+.get-me form{
 	background:rgba(256,256,256, .1);
 	box-shadow: 0 1.1rem 2.1rem rgba(0,0,0,.2);
 	border-radius: 1rem;
@@ -207,26 +215,26 @@ button:hover{
 	justify-content: space-between;
 	padding:1.2rem 2.1rem;
 	flex-wrap: wrap;
+	align-items: center;
 
 
 }
 
-.contact-section form .box{
-	background:rgba(256,256,256, .1);
-	box-shadow: 0 1.1rem 2.1rem rgba(0,0,0,.2);
+.get-me form .box{
 	border-radius:0.5rem;
-	padding:0 2rem;
-	margin:0.5rem 0;
-	height:4rem;
+	padding:0 0rem;
+	margin:0.1rem 5rem;
+	height:3rem;
 	width:50%;
 	font-size:2rem;
 	color:black;
+	align-items: center;
 }
 
-.contact-section form .box::placeholder{
+.get-me form .box::placeholder{
 	text-transform:capitalize;
 	color:purple;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 
 }
 
@@ -255,7 +263,7 @@ button:hover{
 
 
 .portfolio {
-	background-image:"4.jpg";
+	background-image:url(4.jpg);
 }
 .portfolio h2 {
 	font-size:3rem;
@@ -309,12 +317,10 @@ button:hover{
 	width: 70%;
 	height: 100%;
 	background-color: whitesmoke;
-	margin-left: 20%;
+	margin-left: 15%;
     margin-top: 70px;
 }
 
-	
-}
 .box-a{
 	width: 100%;
 	height: 100%;
@@ -389,14 +395,35 @@ button:hover{
 	margin-left: 10px;
 }
 
-.sitereport h1{
+.sitereport 
+
+.box-c h1{
 	font-size:2rem;
-	margin-top:4px;
-}
-.sitereport p{
+	margin-top: 20px;
+	border-top: 20px solid green;
+	align-items: center;
 	
 }
+.sitereport h3 {
+	margin-top:20px;
+	font-size: 25px;
+	border-bottom: 20px solid bisque;
 
+}
+.sitereport img{
+	width:40%;
+	height:50%;
+	margin-top:10px;
+	padding-left: 40px;
+	
+}
+.box-c{
+    width: 80%;
+	height: 100%;
+	background-color: whitesmoke;
+	margin-left: 10%;
+    margin-top: 70px;
+}
 
 
 
@@ -452,17 +479,17 @@ ul li a img{
  	
  	
  @media only screen and (max-width:750px) and (min-width:360px){
- 	nav{
- 		width: 100%;
- 		}
  	nav ul{
- 			flex-direction: column;
- 			width: 100%;
- 			margin-left: -375px;
- 		}
+ 		margin-left: -80%;
+ 		display: block;
+ 	}
+ 	nav ul li a {
+ 		padding-top: 10px;
+ 	}
+ 	
     .admin img{
     	margin-left:41px;
-    	margin-top:-120px;
+    	margin-top:130px;
     }
  	.admin-1{
  		margin-left:8px;
@@ -482,25 +509,38 @@ ul li a img{
  		margin-left: 40%;
  	}
  	.share{
- 		flex-direction:row;
- 	
+ 		display: inline-block;
+
  	}
  	.share ul{
- 		margin-left: 20%;
+ 		margin-left: 25%;
  		margin-top:7px;
  	}
- 	.share ul li img{
-
- 		
-
- 	}
+ 	
  	.contact-info{
  		font-size: 12px;
  		margin-left:13%;
  		margin-top: 80px;
  		align-items: center;
  	}
- 	
+
+ 	.portfolio h2{
+    	margin-top:130px;
+ 	}
+
+ 	.get-me{
+ 		margin-top: 130px;
+ 	}
+ 	.cv-box{
+ 		margin-top:130px;
+ 	}
+ 	.sitereport{
+ 		margin-top:130px;
+ 	}
+ 	#menu-icon:checked ~ nav ul{
+    left: 0%;
+    margin-left: -85%;
+}
  }
 
 

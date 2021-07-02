@@ -36,40 +36,34 @@ body{
 nav{
 	display: flex;
 	flex-flow: wrap;
-	flex-direction: row;
+	flex-direction:column;
 	width: 100%;
 	height: 100px;
-	background-color:#34495e;
-	margin-top: 5px;
+	margin-top:5px;
 	cursor: pointer;
+	
 }
 
 
 nav ul{
      left: -100%;
 	 display: flex;
+	 position:fixed;
 	 flex-direction: row;
 	 flex-flow: wrap;	 
 	 list-style: none;
 	 padding-left: 500px;
-	 justify-content: space-between;
 	 transition: all 2s ease;
+	 margin-left: 20%;
 }
 
 
 nav ul li {
-	display: flex;
-	flex-direction: row;
-	flex-flow: wrap;
-	padding: 25px;
-	justify-content: space-between;
 	font-size: 25px;
+	padding-left: 20px;
 }
 
-nav ul li{
-	display: inline-block;
-	margin:0 20px;
-}
+
 
 nav ul li a:hover{
 	color:white;
@@ -80,22 +74,21 @@ nav ul li a{
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: row;
-	justify-content: space-between;
 	color:red;
 	text-decoration: none;
 
 }
 
 .admin{
-	margin: 15px 0 0;
+	margin: 100px 0 0;
 	color:white;
 
 }
 .admin img{
-	border-radius: 50%;
-	box-shadow:0 0 0 1rem rgba(256,256,256, .3);
-		margin: 1rem 0;
-		margin-left:60px;
+	border-radius:50%;
+	box-shadow:0 0 0 1rem rgba(257,257,257, .3);
+    margin: 0rem 0rem 4rem 4rem;
+    margin-left:60px;
 }
 
 .admin-1{
@@ -109,6 +102,7 @@ nav ul li a{
 .admin-1 h1{
 	font-size: 50px;
 	margin:10px 0px;
+		color:#000080;
 }
 
 .admin-1 p{
@@ -120,15 +114,11 @@ nav ul li a{
     color:brown;
 }
 
-.admin-1 h1{
-	color:#000080;
-}
 
 .share {
 	width:100%;
 	height:50px;
 	display: flex;
-	padding-bottom: : 100px;
 	float: right;
 
 }
@@ -159,7 +149,8 @@ button{
 	border-radius:30px;
 	cursor: pointer;
 	transition: transform .4s;
-	box-shadow:0 0 5px white, 0 0 10px white, 0 0 15px white;
+	box-shadow:0 0 4px white, 0 0 11px white, 0 0 14px white;
+	margin-top: 20px;
 }
 
 button:hover{
@@ -175,37 +166,34 @@ button:hover{
 }
  
 .contact {
-	min-height: 100%;
-    background-color: transparent;
-	justify-content: space-between;
+    width: 100%;
 	display: flex;
 	align-items: center;
-	flex-direction: column;
-	padding-top: 20px;
+	flex-direction:column;
 }
 
-.contact-section{
-	width: 100%;
+.get-me{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .contact-info{
-	background-color:black;
-	color:white;
+	color:orangered;
 	max-width: 100%;
 	line-height: 30px;
 	padding-left: 70px;
 	font-size: 20px;
-	margin-top: 320px
+	margin-top: 260px;
 }
 
-.contact h2{
-	font-size:50px;
+
+.get-me h2{
+	font-size:40px;
+	 padding-left:100px;
+	margin-top: 10px;
 }
 
-.contact-section form{
+.get-me form{
 	background:rgba(256,256,256, .1);
 	box-shadow: 0 1.1rem 2.1rem rgba(0,0,0,.2);
 	border-radius: 1rem;
@@ -213,35 +201,39 @@ button:hover{
 	justify-content: space-between;
 	padding:1.2rem 2.1rem;
 	flex-wrap: wrap;
+	align-items: center;
+
+
 }
 
-.contact-section form .box{
+.get-me form .box{
 	background:rgba(256,256,256, .1);
 	box-shadow: 0 1.1rem 2.1rem rgba(0,0,0,.2);
-	border-radius:1rem;
-	padding:0 2rem;
-	margin:0.5rem 0;
+	border-radius:0.5rem;
+	padding:0 0rem;
+	margin:0.1rem 5rem;
 	height:3rem;
 	width:50%;
 	font-size:2rem;
-	color:white;
-	text-transform: none;
+	color:black;
+	align-items: center;
+
+}
+text-area:placeholder{
+	font-size: 14px;
 }
 
-
-.contact-section form .box::placeholder{
+.get-me form .box::placeholder{
 	text-transform:capitalize;
 	color:purple;
-	}
+	font-size: 1.2rem;
 
-form .message{
-		padding:1rem;
-		height: 15re
 }
+
 
 .btn{
 	color: white;
-	background: #3a6cf4;
+	background: blue;
 	display:block;
 	font-size: 1.2rem;
 	letter-spacing: 2px;
@@ -262,11 +254,14 @@ form .message{
 
 
 
-
+.portfolio {
+	background-image:"4.jpg";
+}
 .portfolio h2 {
 	font-size:3rem;
 	padding-left:100px;
 	color: blue;
+	margin-top: 10px;
 }
 
 .portfolio h2 span{
@@ -306,105 +301,223 @@ form .message{
 
 
 
-
-
-
+.body23{
+	background-color:darkgrey;
+}
 
 .cv-box{
-	width: 800px;
-	height: 1000px;
-	margin: 0;
-	background-color: green;
-	background-repeat: center fixed;
+	width: 70%;
+	height: 100%;
+	background-color: whitesmoke;
+	margin-left: 20%;
+    margin-top: 70px;
 }
 
-.box-outer{
-	padding: 30px;
-	position:center;
+	
 }
-
 .box-a{
-	background-color:white;
-	width: 35%;
-    float:left;
-    height: 1000px;	
-    display:center; 
-}
-
-.box-b{
-	width:60%;
-    float:left;
-    padding-left:280px;
-    display: center;
-    margin-top:-980px;
-}
-
-.pp{
 	width: 100%;
-}
-.content2{
-	padding: 20px;
+	height: 100%;
 }
 
+.box-a img{
+	text-align: center;
+	margin-top: 15px;
+	width: 30%;
+	height: 30%;
+	
+}
+.content2 h1{
+	border-bottom: 2px solid black;
+	margin-top: 10px;
+
+}
+.content2 p{
+	font-size: 18px;
+	margin-top: 10px;
+}
 .skill h1{
+	border-bottom: 2px solid black;
+	margin-top: 10px;
 	color: blue;
-	font-weight: 300;
-	text-transform: uppercase;
-	padding:10px;
-	text-align:center;
 }
 .skill p{
-  color:black;
-	font-weight: 300;
-	text-align:center;
-	font-size:1.4rem;
+	margin-top: 5px;
+	font-size: 15px;
 }
-
-.contact-1 h2{
+.contact-1 h1{
+	border-bottom: 2px solid black;
+	margin-top: 10px;
 	color: blue;
-	padding-top:10px;
-	text-align: center;
+
 }
 .contact-1 p{
-    text-align: center;
-    font-size: 1rem;
-    padding-top:8px;
+	margin-top: 5px;
+	font-size: 15px;
 }
-.contact-1 a{
-	text-align: center;
-    padding-left:4px;
+.experience h1{
+	border-bottom: 2px solid black;
+	margin-top: 10px;
+	color: blue;
+}
+.experience p{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.box-b {
+	margin-top: 10px;
+}
+.education h1{
+	width: 100%;
+	border-bottom: 2px solid black;
+	color: blue;
+}
+.education h5, p{
+	margin-top: 5px;
+	font-size: 18px;
+	margin-left: 10px;
 }
 
-.experience hr{
-	size:40px;
-	color:yellow;
+.hobbies h1{
+	width: 100%;
+	border-bottom: 2px solid black;
+	color: blue;
+}
+.hobbies{
+	font-size: 18px;
+	margin-top: 5px; 
+	margin-left: 10px;
 }
 
-.box-b{
+.sitereport h1{
+	font-size:2rem;
+	margin-top:4px;
+}
+.sitereport img{
+	width:50%;
+	height:60%;
 	
 }
 
 
 
 
+ul li a img{
+	height:40px;
+	width: 40px;
+}
 
 
 
 
 
 
- @media only screen and (min-width: 768px) {
 
+
+
+
+ @media only screen and (max-width: 1100px) and (min-width: 750px){
+ 	nav{
+ 		width: 100%;
+ 	}
+ 	nav ul{
+ 		flex-direction: row;
+ 		flex-wrap: nowrap;
+ 		width: 100%;
+ 		margin-left: -350px;
+
+ 	}
+
+ 	
+ 	.admin-1{
+ 		margin-left: 400px;
+ 		margin-top: -300px;
+ 	}
+ 	.admin-1 h1{
+ 		font-size: 24px;
+ 		text-align: center;
+ 	}
+ 	.admin-1 p{
+ 		font-size: 20px;
+ 		text-align: center;
+ 	}
+ 	.c-btn{
+ 		margin-left:  67%;
+ 	}
+ 	.share{
+ 		width: 100%;
+ 	}
+ 	.share ul{
+ 		margin-left: 70%;
+ 	}
  }
+ 	
+ 	
+ @media only screen and (max-width:750px) and (min-width:360px){
+ 	nav ul{
+ 		margin-left: -200px;
+ 		display: block;
+ 	}
+ 	nav ul li a {
+ 		padding-top: 10px;
+ 	}
+ 	
+    .admin img{
+    	margin-left:41px;
+    	margin-top:130px;
+    }
+ 	.admin-1{
+ 		margin-left:8px;
+ 		margin-top: -5px;
+ 	}
+ 	.admin-1 h1{
+ 		font-size: 18px;
+ 		text-align: center;
+ 		color:white;
+ 	}
+ 	.admin-1 p{
+ 		font-size: 14px;
+ 		text-align: center;
+ 		color:yellow;
+ 	}
+ 	.c-btn{
+ 		margin-left: 40%;
+ 	}
+ 	.share{
+ 		flex-direction:row;
+ 	
+ 	}
+ 	.share ul{
+ 		margin-left: 20%;
+ 		margin-top:7px;
+ 	}
+ 	.share ul li img{
 
+ 		
 
+ 	}
+ 	.contact-info{
+ 		font-size: 12px;
+ 		margin-left:13%;
+ 		margin-top: 80px;
+ 		align-items: center;
+ 	}
 
+ 	.portfolio h2{
+    	margin-top:130px;
+ 	}
 
-
-
-
-
-
+ 	.get-me{
+ 		margin-top: 130px;
+ 	}
+ 	.cv-box{
+ 		margin-top:130px;
+ 	}
+ 	.sitereport{
+ 		margin-top:130px;
+ 	}
+ 	
+ }
 
 
 
