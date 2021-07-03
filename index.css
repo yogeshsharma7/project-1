@@ -2,22 +2,41 @@
 body{
 	width: 100%;
 	height: 100%;
-	background-size: cover;
 	font-size: 15px;
 	box-sizing:border-box;
 }
 
 .screen1{
 	background: url(111.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	
 }
 .screen2{
+	width: 100%;
+	height: 100%;
 	background: url(4.jpg);
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 .screen3{
 	background: url(123.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
 }
+
 .screen4{
 	background-color:burlywood;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
 }
 
 .menu1{
@@ -299,7 +318,7 @@ button:hover{
 .portfolio .image-container .box img{
 	height: 100%;
 	width:100%;
-	object-fit: cover;
+
 }
 
 
@@ -311,13 +330,17 @@ button:hover{
 
 .body23{
 	background-color:darkgrey;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .cv-box{
-	width: 70%;
+	width: 80%;
 	height: 100%;
 	background-color: whitesmoke;
-	margin-left: 15%;
+	margin-left: 10%;
     margin-top: 70px;
 }
 
@@ -395,37 +418,80 @@ button:hover{
 	margin-left: 10px;
 }
 
-.sitereport 
-
-.box-c h1{
-	font-size:2rem;
-	margin-top: 20px;
-	border-top: 20px solid green;
-	align-items: center;
-	
-}
-.sitereport h3 {
-	margin-top:20px;
-	font-size: 25px;
-	border-bottom: 20px solid bisque;
-
-}
-.sitereport img{
-	width:40%;
-	height:50%;
-	margin-top:10px;
-	padding-left: 40px;
-	
-}
 .box-c{
-    width: 80%;
 	height: 100%;
+	width: 80%;
 	background-color: whitesmoke;
 	margin-left: 10%;
     margin-top: 70px;
 }
 
+.box-c h1{
+	font-size:2rem;
+	margin-top: 20px;
+	align-items: center;
+	
+}
+.sitereport h1{
+	margin-bottom: 10px;
+	text-align: center;
+	border-bottom: 10px solid green;
+}
+.site1 h1{
+	text-align: center;
+    color:blue;
+}
+.site1 h3{
+	border-top: 10px solid crimson;
+	padding-left:5px;
+	margin-top: 5px;
+	color:green;
+}
+.site1 img{
+	width:47%;
+	height:37%;
+	margin-bottom:10px;
+	margin-top: 10px;
+    padding-left: 50px;
+	align-items: center;
+}
 
+.validation img{
+	margin-top:10px;
+	padding-left:100px;
+	width:90%;
+	height: 80%;
+}
+.validation h1{
+ text-align: center;
+ border-bottom: 10px solid pink;
+
+}
+.validation h5{
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.reference h1{
+	text-align: center;
+	color: purple;
+}
+.reference h2{
+	text-align: center;
+	background-color: crimson;
+}
+.reference p{
+	 
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	border-top: 10px solid blue;
+}
+
+.reference ul li{
+	list-style: none;
+	margin: 20px;
+}
 
 ul li a img{
 	height:40px;
