@@ -16,14 +16,14 @@ body{
 .screen2{
 	width: 100%;
 	height: 100%;
-	background: url(4.jpg);
+	background: url(4.jpg); /* (technology, n.d.)*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
 }
 .screen3{
-	background: url(123.jpg);
+	background: url(123.jpg); /*(HipWallpaper, n.d.)*/
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -163,14 +163,12 @@ margin-left: 1100px;
 margin-top:-65px; 
 padding-left: 10px;
 }
+
 .share ul li {
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: row;
 	padding-left: 10px;
-}
-.share ul li a{
-	*/(Fb, facebook, facebook logo icon - Free download, n.d.)*/
 }
 
 button{
@@ -608,9 +606,6 @@ ul li a img{
     left: 0%;
     margin-left: -85%;
 }
-
-
-
 
 }
 
